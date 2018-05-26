@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-const config = require("sentinel/config.json");
+const config = require("StrenghtyPvP/sentinel/config.json");
 
 client.on("ready", () => {
 
