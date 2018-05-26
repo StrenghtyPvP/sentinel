@@ -1,0 +1,14 @@
+{
+  "name": "sentinel",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "eris": "^0.7.2"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
