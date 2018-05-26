@@ -6,9 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "eris": "^0.7.2"
-  },
-  "engines": {
-    "node": "8.x"
+    "discord.js": "^11.1.0"
+    "request": "2.81.0"
   }
 }
