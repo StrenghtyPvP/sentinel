@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-const config = require("./Config.json");
+const config = require("./config");
 
 client.on("ready", () => {
 
