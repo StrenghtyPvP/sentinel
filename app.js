@@ -3,8 +3,6 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-const config = require("./config");
-
 client.on("ready", () => {
 
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -27,9 +25,9 @@ client.on("message", async message => {
 
   if(message.author.bot) return;
 
-  if(message.content.indexOf(config.prefix) !== 0) return;
+  if(message.content.indexOf(process.env.PREFIX) !== 0) return;
 
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
   if(command === "ping") {
