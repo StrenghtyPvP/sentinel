@@ -7,7 +7,7 @@ client.on("ready", () => {
 
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
 
-  client.user.setActivity(`Sentinel | >help`);
+  client.user.setActivity('Sentinel | >help', { type: 'WATCHING' })
 });
 
 client.on("guildCreate", guild => {
